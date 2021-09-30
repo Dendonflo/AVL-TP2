@@ -45,6 +45,14 @@ public final class ProgramTrace {
 
     }
 
+    public void checkTrace(){
+        if(trace == null){
+            System.out.println("Aucune trace n'a encore ete creee !");
+            return;
+        }
+        System.out.println(trace);
+    }
+
     public void saveTraces(String filePath) throws IOException {
         // Si aucune trace n'est generee, on refuse l'enregistrement du fichier.
         if(trace == null){
